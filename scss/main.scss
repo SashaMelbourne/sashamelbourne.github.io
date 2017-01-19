@@ -5,7 +5,7 @@ $light-blue: #3D519F;
 $yellow: #F6F3EB;
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: $blue;
     color: white;
     line-height: 1.6;
@@ -28,7 +28,7 @@ section.hero {
     margin-bottom: 40px;
     margin-top: 140px;
     h1 {
-        font-family: Merriweather, serif;
+        font-family: 'Merriweather', serif;
         font-size: 48px;
         line-height: 72px;
     }
@@ -57,7 +57,7 @@ section.projects {
         letter-spacing: 2px;
     }
     .items {
-        font-family: Merriweather, serif;
+        font-family: 'Merriweather', serif;
         a {
             display: block;
             color: $yellow;

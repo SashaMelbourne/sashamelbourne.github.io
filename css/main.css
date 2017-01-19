@@ -951,7 +951,7 @@ hr {
     display: none !important; } }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #384D9D;
   color: white;
   line-height: 1.6;
@@ -971,7 +971,7 @@ section.hero {
   margin-bottom: 40px;
   margin-top: 140px; }
   section.hero h1 {
-    font-family: Merriweather, serif;
+    font-family: 'Merriweather', serif;
     font-size: 48px;
     line-height: 72px; }
 
@@ -995,7 +995,7 @@ section.projects {
     margin-bottom: 50px;
     letter-spacing: 2px; }
   section.projects .items {
-    font-family: Merriweather, serif; }
+    font-family: 'Merriweather', serif; }
     section.projects .items a {
       display: block;
       color: #F6F3EB;
