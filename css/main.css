@@ -984,6 +984,24 @@ section.info {
     display: block;
     margin-bottom: 5px;
     letter-spacing: 2px; }
+  section.info .mailme {
+    position: relative; }
+    section.info .mailme .text {
+      z-index: 9999;
+      position: absolute; }
+    section.info .mailme .photo {
+      position: absolute;
+      top: -30px;
+      z-index: 9;
+      left: 100px;
+      border: 8px solid #3D519F;
+      width: 100%;
+      height: 120px; }
+      section.info .mailme .photo img {
+        padding-left: 200px;
+        position: absolute;
+        right: 0;
+        bottom: 0px; }
 
 section.projects {
   margin-bottom: 100px; }
@@ -1015,7 +1033,8 @@ section.projects {
           text-transform: uppercase;
           padding: 10px 14px;
           border-radius: 6px;
-          margin-left: 10px; }
+          margin-left: 10px;
+          color: white; }
       section.projects .items a .number {
         font-size: 48px;
         color: #3D519F;

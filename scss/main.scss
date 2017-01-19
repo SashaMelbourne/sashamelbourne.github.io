@@ -44,6 +44,28 @@ section.info {
         margin-bottom: 5px;
         letter-spacing: 2px;
     }
+    .mailme {
+        position: relative;
+        .text {
+            z-index: 9999;
+            position: absolute;            
+        }
+        .photo {
+            position: absolute;
+            top: -30px;
+            z-index: 9;
+            left: 100px;
+            border: 8px solid $light-blue;
+            width: 100%;
+            height: 120px;
+            img {
+                padding-left: 200px;
+                position: absolute;
+                right: 0;
+                bottom: 0px;
+            }
+        }
+    }
 }
 
 section.projects {
@@ -62,6 +84,11 @@ section.projects {
             display: block;
             color: $yellow;
             border-bottom: none;
+            &:hover {
+                .name {
+                    
+                }
+            }
             .name {
                 font-size: 24px;
                 font-weight: 700;
@@ -78,6 +105,7 @@ section.projects {
                     padding: 10px 14px;
                     border-radius: 6px;
                     margin-left: 10px;
+                    color: white;
                 }    
             }
             .number {
