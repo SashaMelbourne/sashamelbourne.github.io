@@ -1000,10 +1000,6 @@ section.projects {
       display: block;
       color: #F6F3EB;
       border-bottom: none; }
-      section.projects .items a:hover {
-        color: white; }
-        section.projects .items a:hover .number {
-          color: white; }
       section.projects .items a .name {
         font-size: 24px;
         font-weight: 700;
@@ -1011,6 +1007,15 @@ section.projects {
         padding-bottom: 30px;
         margin-bottom: 30px;
         line-height: 42px; }
+        section.projects .items a .name span {
+          background-color: #3D519F;
+          font-family: 'Roboto', sans-serif;
+          font-size: 10px;
+          letter-spacing: 1.2px;
+          text-transform: uppercase;
+          padding: 10px 14px;
+          border-radius: 6px;
+          margin-left: 10px; }
       section.projects .items a .number {
         font-size: 48px;
         color: #3D519F;

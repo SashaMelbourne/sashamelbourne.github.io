@@ -62,12 +62,6 @@ section.projects {
             display: block;
             color: $yellow;
             border-bottom: none;
-            &:hover {
-                color: white;
-                .number {
-                    color: white;
-                }
-            }
             .name {
                 font-size: 24px;
                 font-weight: 700;
@@ -75,6 +69,16 @@ section.projects {
                 padding-bottom: 30px;
                 margin-bottom: 30px;
                 line-height: 42px;
+                span {
+                    background-color: $light-blue;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 10px;
+                    letter-spacing: 1.2px;
+                    text-transform: uppercase;
+                    padding: 10px 14px;
+                    border-radius: 6px;
+                    margin-left: 10px;
+                }    
             }
             .number {
                 font-size: 48px;
