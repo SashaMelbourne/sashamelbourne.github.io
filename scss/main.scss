@@ -3,6 +3,7 @@
 $blue: #384D9D;
 $light-blue: #3D519F;
 $yellow: #F6F3EB;
+$orange: #FFD6BA;
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -14,12 +15,13 @@ body {
 }
 
 a {
-    color: $yellow;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    border-bottom: 1px solid rgba($orange, 0.2);
     padding-bottom: 5px;
+    transition: all 0.3s;
     &:hover {
-        color: white;
-        border-bottom: 1px solid rgba(255, 255, 255, 1);
+        color: $orange;
+        border-bottom: 1px solid rgba($orange, 1);
         text-decoration: none;
     } 
 }
@@ -86,11 +88,11 @@ section.projects {
         font-family: 'Merriweather', serif;
         a {
             display: block;
-            color: $yellow;
+            color: white;
             border-bottom: none;
             &:hover {
                 .name {
-                    
+                    color: $orange;
                 }
             }
             .name {
@@ -98,8 +100,9 @@ section.projects {
                 font-weight: 700;
                 border-bottom: 1px solid $light-blue;
                 padding-bottom: 30px;
-                margin-bottom: 30px;
+                padding-top: 30px;
                 line-height: 42px;
+                transition: all 0.3s;
                 span {
                     background-color: $light-blue;
                     font-family: 'Roboto', sans-serif;
@@ -116,7 +119,7 @@ section.projects {
                 font-size: 48px;
                 color: $light-blue;
                 font-weight: 700;
-                line-height: 50px;
+                line-height: 100px;
             }
         } 
     }

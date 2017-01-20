@@ -959,12 +959,13 @@ body {
   font-weight: 300; }
 
 a {
-  color: #F6F3EB;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: 5px; }
+  color: white;
+  border-bottom: 1px solid rgba(255, 214, 186, 0.2);
+  padding-bottom: 5px;
+  transition: all 0.3s; }
   a:hover {
-    color: white;
-    border-bottom: 1px solid white;
+    color: #FFD6BA;
+    border-bottom: 1px solid #ffd6ba;
     text-decoration: none; }
 
 ul {
@@ -1020,15 +1021,18 @@ section.projects {
     font-family: 'Merriweather', serif; }
     section.projects .items a {
       display: block;
-      color: #F6F3EB;
+      color: white;
       border-bottom: none; }
+      section.projects .items a:hover .name {
+        color: #FFD6BA; }
       section.projects .items a .name {
         font-size: 24px;
         font-weight: 700;
         border-bottom: 1px solid #3D519F;
         padding-bottom: 30px;
-        margin-bottom: 30px;
-        line-height: 42px; }
+        padding-top: 30px;
+        line-height: 42px;
+        transition: all 0.3s; }
         section.projects .items a .name span {
           background-color: #3D519F;
           font-family: 'Roboto', sans-serif;
@@ -1043,7 +1047,7 @@ section.projects {
         font-size: 48px;
         color: #3D519F;
         font-weight: 700;
-        line-height: 50px; }
+        line-height: 100px; }
 
 section.socials {
   margin-bottom: 140px; }
