@@ -93,6 +93,14 @@
                 </div>
             </div>
         </section>
+        <section class="dribbble">
+            <div class="row">
+                <h2 class="col-lg-offset-2 col-md-offset-2 col-lg-10">Свежие шоты</h2>
+            </div>
+            <div class="row">
+                <ul class="shots"></ul>
+            </div>
+        </section>
         <section class="socials">
             <div class="row">
                 <h2 class="col-lg-offset-2 col-md-offset-2 col-lg-10">Социальные сети</h2>
@@ -107,5 +115,25 @@
             </div>
         </section>
     </div>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jribbble.min.js"></script>
+    <script>
+        $.jribbble.setToken('8f6a5779afb638591bcd12b424f8daae8da143b4ab8c5876d84ea11cc810c72c');
+
+        $.jribbble.users('sashamelbourne').shots({per_page: 9}).then(function(shots) {
+        var html = [];
+        
+        shots.forEach(function(shot) {
+            html.push('<li class="shots--shot col-lg-4 col-md-6">');
+            html.push('<a href="' + shot.html_url + '">');
+            html.push('<img src="' + shot.images.hidpi + '">');
+            html.push('</a></li>');
+        });
+        
+        $('.shots').html(html.join(''));
+        });
+    </script>
+
 </body>
 </html>

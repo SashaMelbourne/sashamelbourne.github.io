@@ -967,6 +967,10 @@ a {
     border-bottom: 1px solid white;
     text-decoration: none; }
 
+ul {
+  margin: 0;
+  padding: 0; }
+
 section.hero {
   margin-bottom: 40px;
   margin-top: 140px; }
@@ -1050,3 +1054,19 @@ section.socials {
     display: block;
     margin-bottom: 50px;
     letter-spacing: 2px; }
+
+section.dribbble {
+  margin-bottom: 100px; }
+  section.dribbble h2 {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+    display: block;
+    margin-bottom: 50px;
+    letter-spacing: 2px; }
+  section.dribbble .shots {
+    list-style: none; }
+    section.dribbble .shots li {
+      margin-bottom: 30px; }
+      section.dribbble .shots li a img {
+        width: 100%; }
