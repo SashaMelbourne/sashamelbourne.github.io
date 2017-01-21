@@ -119,19 +119,21 @@
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jribbble.min.js"></script>
     <script>
-        $.jribbble.setToken('8f6a5779afb638591bcd12b424f8daae8da143b4ab8c5876d84ea11cc810c72c');
+        $( document ).ready(function() {
+            $.jribbble.setToken('8f6a5779afb638591bcd12b424f8daae8da143b4ab8c5876d84ea11cc810c72c');
 
-        $.jribbble.users('sashamelbourne').shots({per_page: 9}).then(function(shots) {
-        var html = [];
-        
-        shots.forEach(function(shot) {
-            html.push('<li class="shots--shot col-lg-4 col-md-6">');
-            html.push('<a href="' + shot.html_url + '">');
-            html.push('<img src="' + shot.images.normal + '">');
-            html.push('</a></li>');
-        });
-        
-        $('.shots').html(html.join(''));
+            $.jribbble.users('sashamelbourne').shots({per_page: 9}).then(function(shots) {
+            var html = [];
+            
+            shots.forEach(function(shot) {
+                html.push('<li class="shots--shot col-lg-4 col-md-6">');
+                html.push('<a href="' + shot.html_url + '">');
+                html.push('<img src="' + shot.images.normal + '">');
+                html.push('</a></li>');
+            });
+            
+            $('.shots').html(html.join(''));
+            });
         });
     </script>
 
